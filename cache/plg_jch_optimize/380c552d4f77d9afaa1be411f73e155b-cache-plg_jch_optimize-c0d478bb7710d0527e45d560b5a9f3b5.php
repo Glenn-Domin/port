@@ -1,0 +1,1 @@
+<?php die("Access Denied"); ?>#x#a:2:{s:6:"result";s:250:"try{jQuery.extend(jQuery.lazyLoadXT,{selector:'img[data-jchll=true]',});jQuery(window).on('ajaxComplete',function(){setTimeout(function(){jQuery(window).lazyLoadXT();},50);});}catch(e){console.error('Error in script declaration; Error:'+e.message);};";s:6:"output";s:0:"";}

@@ -1,0 +1,188 @@
+/* :::. GRID_12 .::: */
+
+/* Grid >> Global */
+
+.grid_1,
+.grid_2,
+.grid_3,
+.grid_4,
+.grid_5,
+.grid_6,
+.grid_7,
+.grid_8,
+.grid_9,
+.grid_10,
+.grid_11,
+.grid_12,
+.grid_small_12 {
+	display:inline;
+	float: left;
+	position: relative;
+	/* prevent loose padding/margin from breaking the grid layout */
+	margin-left: 0px !important;
+	margin-right: 0px !important;
+	padding-left: 0px !important;
+	padding-right: 0px !important;
+}
+
+.grid_12 {
+	float: none;
+}
+
+/* Grid >> 12 Columns */
+
+.container_100 .grid_1,
+.container_12 .grid_1 {
+	width: 8.33333%;
+}
+
+.container_100 .grid_2,
+.container_12 .grid_2 {
+	width: 16.66667%;
+}
+
+.container_100 .grid_3,
+.container_12 .grid_3 {
+	width: 25%;
+}
+
+.container_100 .grid_4,
+.container_12 .grid_4 {
+	width: 33.33333%;
+}
+
+.container_100 .grid_5,
+.container_12 .grid_5 {
+	width: 41.66667%;
+}
+
+.container_100 .grid_6,
+.container_12 .grid_6 {
+	width: 50%;
+}
+
+.container_100 .grid_7,
+.container_12 .grid_7 {
+	width: 58.33333%;
+}
+
+.container_100 .grid_8,
+.container_12 .grid_8 {
+	width: 66.66667%;
+}
+
+.container_100 .grid_9,
+.container_12 .grid_9 {
+	width: 75%;
+}
+
+.container_100 .grid_10,
+.container_12 .grid_10 {
+	width: 83.33333%;
+}
+
+.container_100 .grid_11,
+.container_12 .grid_11 {
+	width: 91.66667%;
+}
+
+.container_100 .grid_12,
+.container_12 .grid_12 {
+	width: 100%;
+}
+
+/* Clear Floated Elements */
+
+.clear {
+  clear: both;
+  display: block;
+  overflow: hidden;
+  visibility: hidden;
+  width: 0;
+  height: 0;
+}
+
+.container_100 .grid_hide,
+.container_12 .grid_hide {
+	display: none;
+}
+
+.container_100 .grid_show,
+.container_12 .grid_show {
+	display: block;
+}
+
+@media only screen and (max-width : 481px){
+	.container_100 .grid_small_1,
+	.container_12 .grid_small_1 {
+		width: 8.33333%;
+	}
+
+	.container_100 .grid_small_2,
+	.container_12 .grid_small_2 {
+		width: 16.66667%;
+	}
+
+	.container_100 .grid_small_3,
+	.container_12 .grid_small_3 {
+		width: 25%;
+	}
+
+	.container_100 .grid_small_4,
+	.container_12 .grid_small_4 {
+		width: 33.33333%;
+	}
+
+	.container_100 .grid_small_5,
+	.container_12 .grid_small_5 {
+		width: 41.66667%;
+	}
+
+	.container_100 .grid_small_6,
+	.container_12 .grid_small_6 {
+		width: 50%;
+	}
+
+	.container_100 .grid_small_7,
+	.container_12 .grid_small_7 {
+		width: 58.33333%;
+	}
+
+	.container_100 .grid_small_8,
+	.container_12 .grid_small_8 {
+		width: 66.66667%;
+	}
+
+	.container_100 .grid_small_9,
+	.container_12 .grid_small_9 {
+		width: 75%;
+	}
+
+	.container_100 .grid_small_10,
+	.container_12 .grid_small_10 {
+		width: 83.33333%;
+	}
+
+	.container_100 .grid_small_11,
+	.container_12 .grid_small_11 {
+		width: 91.66667%;
+	}
+
+	.container_100 .grid_small_12,
+	.container_12 .grid_small_12 {
+		width: 100%;
+	}
+	
+	.container_12 .grid_small_show,
+	.container_100 .grid_small_show {
+		display: block;
+	}
+	
+	.container_12 .grid_small_hide,
+	.container_100 .grid_small_hide {
+		display: none;
+	}
+	
+}
+
+/* :::. END GRID_12 .::: */

@@ -1,0 +1,238 @@
+/* :::. HORIZONTAL NAVIGATION .::: */
+
+body {
+  -webkit-perspective: 600px;
+  -moz-perspective: 600px;
+  perspective: 600px;
+}
+
+.transformy:after {
+  content: '';
+  opacity: 0;
+  transition: opacity: 0.3s;
+}
+
+.menu-open {
+  height: 100%;
+  overflow: hidden;
+}
+
+.menu-open .transformy {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  overflow: hidden;
+  -webkit-transform-style: preserve-3d;
+  -webkit-transform-origin: 50% 100%;
+  -webkit-animation: OpenTop 0.5s forwards ease-in;
+  -moz-transform-style: preserve-3d;
+  -moz-transform-origin: 50% 100%;
+  -moz-animation: OpenTop 0.5s forwards ease-in;
+  transform-style: preserve-3d;
+  transform-origin: 50% 100%;
+  animation: OpenTop 0.5s forwards ease-in;
+}
+
+.menu-open .transformy:after {
+  position: absolute;
+  background-color: #222;
+  background-color: rgba(0,0,0,0.3);
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  opacity: 1;
+  transition: opacity: 0.3s 0.1s;
+}
+
+@-webkit-keyframes OpenTop {
+	50% { 
+		-webkit-transform: rotateX(10deg); 
+		-webkit-animation-timing-function: ease-out; 
+	}
+}
+
+@-moz-keyframes OpenTop {
+	50% { 
+		-moz-transform: rotateX(10deg); 
+		-moz-animation-timing-function: ease-out; 
+	}
+}
+
+@keyframes OpenTop {
+	50% { 
+		transform: rotateX(10deg); 
+		animation-timing-function: ease-out; 
+	}
+}
+
+.menu-open #menu {
+  z-index: 2;
+  position: absolute;
+  top: 30px;
+  right: 30px;
+}
+
+.joomla-nav {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  width: 50%;
+  max-width: 630px;
+  min-width: 320px;
+  height: auto;
+  z-index: 2000;
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -moz-transform: translateX(-50%) translateY(-50%);
+  -ms-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
+}
+
+.nav-inner {
+  -webkit-transform: translateY(-250%);
+  -moz-transform: translateY(-250%);
+  -ms-transform: translateY(-250%);
+  transform: translateY(-250%);
+  opacity: 0;
+}
+
+.menu-open .nav-inner {
+  -webkit-transform: translateY(0);
+  -moz-transform: translateY(0);
+  -ms-transform: translateY(0);
+  transform: translateY(0);
+  opacity: 1;
+  -webkit-transition: all 0.5s 0.1s;
+  -moz-transition: all 0.5s 0.1s;
+  transition: all 0.5s 0.1s;
+  box-shadow: 4px 4px 0px #999;
+  box-shadow: 4px 4px 0px rgba(0,0,0,0.4);
+  background-color: #16c0f3;
+  padding: 15px;
+}
+
+.menu-open .joomla-nav {
+  visibility: visible;
+}
+
+#navigation li {
+  margin: 0;
+  padding: 0;
+  position: relative;
+  list-style: none;
+  float: left;
+  width: 50%;
+}
+
+#navigation li a {
+  color: #fff;
+  text-decoration: none;
+  background-color: #ff7f26;#
+  box-shadow: 4px 4px 0px #999;
+  box-shadow: 4px 4px 0px rgba(0,0,0,0.4);
+  display: block;
+  margin: 15px;
+  padding: 40px 15px 0px 15px;
+  font-size: 20px;
+  height: 70px;
+  box-sizing: border-box;
+  overflow: hidden;
+  position: relative;
+  top: 0;
+  left: 0;
+  transition: padding 0.3s, box-shadow 0.2s, top 0.2s, left 0.2s;
+}
+
+#navigation li a:focus {
+  box-shadow: 0px 0px 0px rgba(0,0,0,0.4);
+  top: 4px;
+  left: 4px;
+}
+
+#navigation li a:hover {
+  padding: 40px 80px 0px 15px;
+}
+
+#navigation li a:before, #navigation li a:after {
+  font: normal normal normal 34px/70px FontAwesome;
+  position: absolute;
+  top: 0;
+}
+
+#navigation li a:before {
+  right: -50px;
+  transition: right 0.3s;
+}
+
+#navigation li a:hover:before {
+  right: 15px;
+}
+
+#navigation li a:after {
+  left: 15px;
+  transition: left 0.3s;
+}
+
+#navigation li a:hover:after {
+  left: -50px;
+}
+
+#navigation li a.homelink:before, #navigation li a.homelink:after {
+  content: "\f015";
+}
+
+#navigation li a.prof:before, #navigation li a.prof:after {
+  content: "\f085";
+}
+
+#navigation li a.contactlink:before, #navigation li a.contactlink:after {
+  content: "\f003";
+}
+
+/* Active menu item */
+span.mainlevel_active, a#active_menu {
+    background: #ccc; /* active menu items */
+}
+/* :::. BREADCRUMBS .::: */
+span.breadcrumbs {
+    display:block;
+    padding: 13px 0px;
+}
+
+/* :::. PAGINATION .::: */
+/*ul.pagination {
+}
+    ul.pagination li {
+        border-right: 1px solid #cfcfcf;
+        margin: 0px;
+        padding: 0px;
+        display: inline-block;
+        list-style: none;
+        float: left;
+    }
+    ul.pagination li a, ul.pagination li span.pagenav {
+        display: inline-block;
+        padding: 2px 10px 2px 8px;
+        text-decoration: none;
+        font-family: arial;
+        text-transform: lowercase;
+    }
+    ul.pagination li a:hover {
+        text-decoration: underline;
+    }
+    ul.pagination li.end, ul.pagination li.end-inactive {
+        border-right: none;
+    }
+    ul.pagination li.start, ul.pagination li.start-inactive {
+        padding-right: 10px;
+    }
+    ul.pagination li.end, ul.pagination li.end-inactive {
+        padding-left: 10px;
+    }*/
+ 
+ /* :::. END HORIZONTAL NAVIGATION .::: */

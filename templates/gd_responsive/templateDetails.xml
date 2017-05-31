@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension
+	version="3.3"
+	type="template"
+	client="site">
+	<name>gD_responsive</name>
+	<creationDate>25/10/14</creationDate>
+	<author>Glenn Domin</author>
+	<authorEmail>xaduurv@gmail.com</authorEmail>
+	<copyright>Copyright (C) 2005 - 2012 Open Source Matters, Inc. All rights reserved.</copyright>
+	<license>GNU/GPL</license>
+	<version>3.2.0</version>
+	<description>Responsive Template with grid 12 layout</description>
+	
+	<!-- GD: Setting viewport in backend -->
+	<config>
+		<fields name="params">
+			<fieldset name="advanced" label="Layout">
+				<field name="layout-mode" type="list" default="responsive" label="Layout Mode" description="LAYOUT_MODE_DESC" setbyurl="true" setinsession="true" setbysession="true" setincookie="true" setbycookie="true" isbodyclass="true">
+					<option value="responsive">RESPONSIVE</option>
+					<option value="1200fixed">L1200FIXED</option>
+					<option value="960fixed">L960FIXED</option>
+				</field>
+			</fieldset>
+		</fields>
+	</config>
+	
+	<files>
+		<folder>html</folder>
+		<folder>css</folder>
+		<folder>images</folder>
+		<folder>js</folder>
+		<filename>index.php</filename>
+		<filename>home.php</filename>
+		<filename>component.php</filename>
+		<filename>error.php</filename>
+		<filename>index.html</filename>
+		<filename>favicon.ico</filename>
+		<filename>templateDetails.xml</filename>
+		<filename>template_preview.png</filename>
+		<filename>template_thumbnail.png</filename>
+	</files>
+
+	<positions>
+		<position>unbound</position>
+		<position>branding</position>
+		<position>banner</position>
+		<position>navigation</position>
+		<position>precontent</position>
+		<position>postcontent</position>
+		<position>precomponent</position>
+		<position>postcomponent</position>
+		<position>left</position>
+		<position>right</position>
+		<position>prefooter</position>
+		<position>footer</position>
+		<position>postfooter</position>
+	</positions>
+
+</extension>
