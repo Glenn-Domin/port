@@ -1,0 +1,42 @@
+
+
+/* :::. RESET .::: */
+
+dl, dt, dd, ul, ol, li {
+    margin: 0;
+    padding: 0;
+}
+ol, ul {
+    list-style: none;
+}
+a, button:focus {
+    outline: none;
+}
+
+img, iframe {
+    border: none;
+}
+th, td {
+    margin: 0;
+    padding: 0;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+caption, th, td {
+    text-align: left;
+}
+form, fieldset, legend, input, textarea, select {
+    margin: 0;
+    padding: 0;
+}
+fieldset {
+    border: none;
+}
+input, textarea, select {
+    font-size: 1em;
+    font-family: inherit;
+}
+
+/* :::. END RESET .::: */

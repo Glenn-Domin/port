@@ -18,7 +18,7 @@ class JConfig {
 	public $dbprefix = 'i85z1_';
 	public $secret = '5daa55d1ac807b72a58a7f8d4961f9bd';
 	public $gzip = '0';
-	public $error_reporting = 'default';
+	public $error_reporting = 'maximum';
 	public $helpurl = 'https://help.joomla.org/proxy?keyref=Help{major}{minor}:{keyref}&lang={langcode}';
 	public $ftp_host = '';
 	public $ftp_port = '';
